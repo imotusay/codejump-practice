@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>My Work | Web Designer & Photographer Portfolio</title>
+    <!-- サイトの目的が明確に伝わる自然な紹介文に置換 -->
+    <meta name="description" content="東京を拠点に活動するWebデザイナー・フォトグラファー「Emma Ashley」のポートフォリオサイトです。シンプルで洗練されたWebデザインと、日常を切り取った写真作品を掲載しています。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="../common/ress.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="site-title"><a href="index.html"><img src="img/logo.svg" alt="My Work ポートフォリオロゴ"></a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <!-- 外部へのセキュリティ対策(noopener)を追加 -->
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/icon-instagram.png" alt="公式Instagramアカウントはこちら">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+          <!-- メインビジュアルの画像説明を追加 -->
+          <img src="img/mainvisual-pc.jpg" alt="シンプルに整えられたワークスペースとカメラのメインビジュアル画像">
+        </picture>
+      </div>
+
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <ul>
+          <!-- 架空の人物情報を自然なレイアウトに整理 -->
+          <li>Emma Ashley（エマ・アシュリー）</li>
+          <li>〒106-0031 東京都港区西麻布 X-X-X 麻布ビル 2F</li>
+          <li>tel: 03-0000-0000</li>
+          <li>url: ://example.com</li>
+          <li>mail: info@example.com</li>
+        </ul>
+        <!-- 「テキスト…」から、デザイナーとしての経歴や想いが伝わる文章に置換 -->
+        <p>
+          イギリス出身、東京在住のクリエイター。大学卒業後に来日し、都内のデザイン事務所で4年間Webデザイナーとしてのキャリアを積んだ後、独立しました。
+          現在はフリーランスとして、Webサイトのデザイン・コーディングから、ブランドのキービジュアルとなる写真撮影まで幅広く手がけています。
+          日常の中にある「静かな美しさ」をテーマに、シンプルで心地よいビジュアル作りを大切にしています。
+        </p>
+      </section>
+
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+          <!-- 空欄だったalt属性に、制作実績を想定した具体的なテキストを設定 -->
+          <li><img src="img/works1.jpg" alt="クライアント企業のカフェサイトのWebデザイン実績"></li>
+          <li><img src="img/works2.jpg" alt="自然光を取り入れたポートレート写真の作品"></li>
+          <li><img src="img/works3.jpg" alt="アパレルブランドのECサイトリニューアル実績"></li>
+          <li><img src="img/works4.jpg" alt="旅先で撮影した美しい建築と街並みの写真作品"></li>
+          <li><img src="img/works5.jpg" alt="インテリアショップのロゴデザインおよびブランディング実績"></li>
+          <li><img src="img/works6.jpg" alt="みずみずしい植物をクローズアップしたマクロ写真作品"></li>
+        </ul>
+      </section>
+
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+          <!-- 過去の日付（XX）をリアルな年月日に補完し、テキストをブラッシュアップ -->
+          <dt>2025.10.15</dt>
+          <dd>デザイン専門誌「COMMERCIAL PHOTO Vol.150」に注目の若手フォトグラファーとして掲載していただきました。</dd>
+          <dt>2025.08.01</dt>
+          <dd>自身初となる個展での展示作品をまとめた写真集「Silent Light」のオンライン販売を開始します。</dd>
+          <dt>2024.12.10</dt>
+          <dd>【トークイベント開催】12月20日（土）に渋谷のギャラリーにて「Webデザインと写真の融合」をテーマにしたミニトークイベントを開催します。</dd>
+          <dt>2024.05.20</dt>
+          <dd>Webクリエイター向けマガジン「Web Designing Vol.90」の特集記事にて、ポートフォリオが紹介されました。</dd>
+          <dt>2023.11.05</dt>
+          <dd>【個展開催のお知らせ】11月15日より、表参道の「Gallery Space X」にて写真個展「TOKYO NOCTURNE」を開催します。</dd>
+        </dl>
+      </section>
+
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <!-- ユーザーが入力しやすいよう、入力フィールドに必須マーク(required)や適切なプレースホルダーを追加して実用性を向上 -->
+        <form action="#" method="post">
+          <dl>
+            <dt><label for="name">NAME</label></dt>
+            <dd><input type="text" id="name" name="your-name" placeholder="お名前" required></dd>
+            <dt><label for="email">E-mail</label></dt>
+            <dd><input type="email" id="email" name="your-email" placeholder="メールアドレス" required></dd>
+            <dt><label for="message">MESSAGE</label></dt>
+            <dd><textarea id="message" name="your-message" placeholder="お問い合わせ内容をご記入ください" required></textarea></dd>
+          </dl>
+          <div class="button"><input type="submit" value="送信"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <!-- 著作権の年表記を最新に更新 -->
+      <p>&copy; 2026 My Work</p>
+    </footer>
+
+  </body>
+</html>
